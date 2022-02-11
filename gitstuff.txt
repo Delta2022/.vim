@@ -1,0 +1,2 @@
+use git submodule add <url> instead of git clone
+
