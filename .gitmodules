@@ -1,3 +1,24 @@
 [submodule "coc.nvim"]
     path = bundle/coc.nvim
     url = https://github.com/neoclide/coc.nvim
+
+[submodule "ale"]
+    path = bundle/ale
+    url = https://github.com/dense-analysis/ale
+
+[submodule "nerdtree"]
+    path = bundle/nerdtree
+    url = https://github.com/preservim/nerdtree
+
+[submodule "vim-airline"]
+    path = bundle/vim-airline
+    url = https://github.com/vim-airline/vim-airlin
+
+[submodule "vim-airline-themes"]
+    path = bundle/vim-airline-themes
+    url = https://github.com/vim-airline/vim-airline-themes
+
+[submodule "vim-cpp-modern"]
+    path = vim-cpp-modern
+    url = https://github.com/bfrg/vim-cpp-modern
+
