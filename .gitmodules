@@ -12,7 +12,7 @@
 
 [submodule "vim-airline"]
     path = bundle/vim-airline
-    url = https://github.com/vim-airline/vim-airlin
+    url = https://github.com/vim-airline/vim-airline
 
 [submodule "vim-airline-themes"]
     path = bundle/vim-airline-themes
