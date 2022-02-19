@@ -45,3 +45,4 @@ colorscheme sonokai
 let g:airline_theme='minimalist'
 " removes the warning when switching buffers in vim
 set hidden
+nnoremap <C-x> :UndotreeToggle<CR>

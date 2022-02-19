@@ -21,4 +21,6 @@
 [submodule "vim-cpp-modern"]
     path = vim-cpp-modern
     url = https://github.com/bfrg/vim-cpp-modern
-
+[submodule "undotree"]
+    path = bundle/undotree
+    url = https://github.com/mbbill/undotree
