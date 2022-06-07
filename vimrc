@@ -27,6 +27,7 @@ let g:ale_linters = {
 \}
 let g:ale_sign_error = '|>'
 let g:ale_sign_warning = '->'
+nnoremap <C-a> :ALEToggle<CR>
 set sw=4
 set expandtab
 autocmd BufNewFile,BufRead *.py set keywordprg=pydoc3.8
@@ -45,4 +46,17 @@ colorscheme sonokai
 let g:airline_theme='minimalist'
 " removes the warning when switching buffers in vim
 set hidden
+" undotree
 nnoremap <C-x> :UndotreeToggle<CR>
+" persistent undos
+" guard for distributions lacking the 'persistent_undo' feature.
+if has('persistent_undo')
+    " define a path to store persistent undo files.
+    let target_path = expand('~/.config/vim-persisted-undo/')    " create the directory and any parent directories
+    " if the location does not exist.
+    if !isdirectory(target_path)
+        call system('mkdir -p ' . target_path)
+    endif    " point Vim to the defined undo directory.
+    let &undodir = target_path    " finally, enable undo persistence.
+    set undofile
+endif
